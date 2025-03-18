@@ -26,4 +26,5 @@
 
 void WEACT_H750VBT6_board_early_init(void)
 {
+
 }
