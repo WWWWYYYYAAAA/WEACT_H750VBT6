@@ -44,7 +44,7 @@ cd micropython/ports/stm32/boards
 git clone https://github.com/ikoesters/WEACT_H750VBT6
 
 cd ..
-make BOARD=/WEACT_H750VBT6
+make BOARD=/WEACT_H750VBT6 -j
 ```
 
 ## Flashing via DFU
@@ -54,7 +54,7 @@ USB, press and hold the B0 button and reconnect USB then release B0.
 After installing dfu-util, go the the build folder (`ports/stm32/boards/build-WEACT_H750VBT6`) and type:
 
 ```bash
-dfu-util -a 0 -D firmware.dfu
+sudo dfu-util -a 0 -D firmware.dfu
 ```
 
 Once the upload is complete, disconnect and reconnect USB.
